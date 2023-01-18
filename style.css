@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #338cf4;
+}
+
+.editor {
+    width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+}
+
+.editor__options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.editor__options--row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.editor__input {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+}
+
+.editor__input input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.editor__input input::-webkit-color-swatch-wrapper{
+    padding: 0;
+}
+
+.editor__btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 3px;
+    color: #020929;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.editor__btn:hover, 
+.active {
+    background-color: #e0e9ff;
+}
+
+.editor__area {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    height: 50vh;
+}
