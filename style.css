@@ -58,7 +58,8 @@ body {
     padding: 0;
 }
 
-.editor__btn {
+.editor__btn,
+.editor__btn--change {
     width: 28px;
     height: 28px;
     border: none;
@@ -70,7 +71,8 @@ body {
     transition: all .3s linear;
 }
 
-.editor__btn:hover, 
+.editor__btn:hover,
+.editor__btn--change:hover, 
 .active {
     background-color: #e0e9ff;
 }
